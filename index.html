@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Services Marketing | IT & Cyber Security Staffing Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                    sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                    brand: {
+                    dark: '#0B1120', // Deepest Slate
+                    primary: '#0ea5e9', // Sky 500
+                    secondary: '#14b8a6', // Teal 500
+                    surface: '#1e293b', // Slate 800
+                    glow: '#38bdf8', // Light Blue Glow
+                    }
+                    },
+                    backgroundImage: {
+                    'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(11, 17, 32, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(11, 17, 32, 0.4), rgba(11, 17, 32, 1));
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+        }
+        .card-hover:hover {
+            box-shadow: 0 0 30px rgba(14, 165, 233, 0.15);
+            border-color: rgba(14, 165, 233, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-gray-100 font-sans antialiased selection:bg-brand-primary selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img src="Pro-Services-Logo.png" alt="Pro Services Marketing Logo" class="h-14 w-14 rounded-xl border border-gray-700/50 shadow-lg shadow-brand-primary/20">
+                    <div class="flex flex-col">
+                    <span class="font-bold text-xl tracking-tight text-white leading-none">Pro Services</span>
+                    <span class="text-brand-primary text-sm font-semibold tracking-widest uppercase">Marketing</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#" class="text-gray-300 hover:text-brand-primary transition-colors text-sm font-medium">Home</a>
+                    <a href="#solutions" class="text-gray-300 hover:text-brand-primary transition-colors text-sm font-medium">Solutions</a>
+                    <a href="#process" class="text-gray-300 hover:text-brand-primary transition-colors text-sm font-medium">Our Process</a>
+                    <a href="#about" class="text-gray-300 hover:text-brand-primary transition-colors text-sm font-medium">About</a>
+                    <a href="#" class="px-6 py-3 rounded-lg bg-gradient-to-r from-brand-primary to-brand-secondary hover:from-blue-500 hover:to-teal-500 text-white text-sm font-bold transition-all shadow-lg shadow-brand-primary/25 transform hover:-translate-y-0.5">
+                    Book a Strategy Call
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-300 hover:text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="pro-services-hero-background.png" alt="Cyber Security Network Background" class="w-full h-full object-cover opacity-50">
+            <div class="hero-overlay absolute inset-0"></div>
+            <!-- Animated Gradient Blob -->
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-primary/20 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-secondary/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-brand-surface/50 border border-brand-primary/30 backdrop-blur-md">
+                <span class="relative flex h-3 w-3">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-secondary opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-secondary"></span>
+                </span>
+                <span class="text-brand-primary text-xs font-bold tracking-wider uppercase">Specialized for IT & Cyber Security Staffing</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tight leading-tight">
+                Scale Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-glow to-brand-secondary text-glow">Cyber & IT Staffing</span> <br> Firm with Precision Leads.
+            </h1>
+            
+            <p class="mt-4 max-w-3xl mx-auto text-xl text-gray-300 mb-12 leading-relaxed">
+                Stop chasing generic leads. We deliver verified, high-intent job requisitions and hiring manager contacts specifically for the <span class="text-white font-semibold">Cyber Security and IT sectors</span>.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#" class="px-8 py-4 rounded-lg bg-brand-primary hover:bg-blue-600 text-white font-bold text-lg transition-all shadow-lg shadow-brand-primary/40 flex items-center justify-center gap-3 group">
+                    Get Verified Leads <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="#solutions" class="px-8 py-4 rounded-lg bg-brand-surface/80 hover:bg-brand-surface border border-gray-600 hover:border-brand-primary text-white font-semibold text-lg transition-all flex items-center justify-center backdrop-blur-sm">
+                    Explore Solutions
+                </a>
+            </div>
+
+            <!-- Stats/Trust -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-gray-800 pt-10">
+                <div>
+                    <div class="text-3xl font-bold text-white mb-1">22.5k+</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-wider">Active Leads</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-white mb-1">Weekly</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-wider">Updates</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-white mb-1">100%</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-wider">Verified Contacts</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-white mb-1">Niche</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-wider">Cyber Focus</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solutions Grid -->
+    <section id="solutions" class="py-32 bg-brand-dark relative">
+        <!-- Background Grid Pattern -->
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#38bdf8 1px, transparent 1px); background-size: 40px 40px;"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Targeted Growth Solutions</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto text-lg">We combine data-driven lead generation with expert outreach to fill your pipeline with IT and Cyber Security job orders.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Solution 1 -->
+                <div class="card-hover group p-10 rounded-3xl bg-brand-surface border border-gray-800 transition-all duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform border border-brand-primary/20">
+                    <i class="fas fa-database text-3xl text-brand-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">IT & Cyber Lead Data</h3>
+                    <p class="text-gray-400 mb-8 leading-relaxed">Access a daily feed of companies actively hiring for CISO, SOC Analyst, Network Engineer, and DevSecOps roles. Verified hiring manager emails and direct dials.</p>
+                    <ul class="space-y-3 mb-8">
+                    <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Daily Job Scraper</li>
+                    <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Tech Stack Filtering</li>
+                    <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Direct Contact Info</li>
+                    </ul>
+                    <a href="#" class="text-brand-primary font-bold text-sm hover:text-white flex items-center gap-2 transition-colors">Start Sourcing <i class="fas fa-chevron-right text-xs"></i></a>
+                </div>
+
+                <!-- Solution 2 -->
+                <div class="card-hover group p-10 rounded-3xl bg-brand-surface border border-gray-800 transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAR</div>
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform border border-brand-primary/20">
+                    <i class="fas fa-headset text-3xl text-brand-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Outbound Lead Generation</h3>
+                    <p class="text-gray-400 mb-8 leading-relaxed">Our US-based SDRs specialize in the language of tech. We cold call and email on your behalf to book meetings with CTOs and Hiring Managers.</p>
+                    <ul class="space-y-3 mb-8">
+                    <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Dedicated SDR Team</li>
+                    <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Multi-Channel Outreach</li>
+                    <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Calendar Booking</li>
+                    </ul>
+                    <a href="#" class="text-brand-secondary font-bold text-sm hover:text-white flex items-center gap-2 transition-colors">Scale Outreach <i class="fas fa-chevron-right text-xs"></i></a>
+                </div>
+
+                <!-- Solution 3 -->
+                <div class="card-hover group p-10 rounded-3xl bg-brand-surface border border-gray-800 transition-all duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform border border-brand-primary/20">
+                    <i class="fas fa-users-cog text-3xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Staff Augmentation</h3>
+                    <p class="text-gray-400 mb-8 leading-relaxed">Need to scale your own internal team? We provide virtual recruiters, sourcers, and marketing assistants trained specifically for staffing agencies.</p>
+                    <ul class="space-y-3 mb-8">
+                    <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Virtual Recruiters</li>
+                    <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Data Entry Specialists</li>
+                    <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Cost-Effective Scaling</li>
+                    </ul>
+                    <a href="#" class="text-purple-400 font-bold text-sm hover:text-white flex items-center gap-2 transition-colors">Build Your Team <i class="fas fa-chevron-right text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Trust Section -->
+    <section id="about" class="py-32 bg-gray-900 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-20">
+                <!-- Image Side -->
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-brand-primary to-brand-secondary rounded-3xl opacity-20 blur-2xl"></div>
+                    <img src="pro-services-marketing-pic.png" alt="Modern IT Staffing Office" class="relative rounded-3xl shadow-2xl border border-gray-700 w-full z-10">
+                    
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-10 -left-10 bg-brand-surface p-8 rounded-2xl border border-gray-600 shadow-2xl z-20 hidden md:block">
+                    <div class="flex items-center gap-5">
+                    <div class="h-12 w-12 rounded-full bg-green-500/20 flex items-center justify-center">
+                    <i class="fas fa-chart-line text-green-400 text-xl"></i>
+                    </div>
+                    <div>
+                    <div class="text-white font-bold text-xl">ROI Focused</div>
+                    <div class="text-sm text-gray-400">Data-Driven Results</div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="w-full lg:w-1/2">
+                    <div class="inline-block mb-4 px-3 py-1 rounded-lg bg-brand-primary/10 border border-brand-primary/20">
+                    <span class="text-brand-primary text-sm font-bold uppercase">Why Pro Services Marketing?</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
+                    We Speak <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">Cyber Security.</span>
+                    </h2>
+                    <div class="space-y-6 text-gray-400 text-lg leading-relaxed">
+                    <p>
+                    Generalist lead generation doesn't work for niche staffing. You need to know the difference between a Penetration Tester and a GRC Analyst. <strong class="text-white">We do.</strong>
+                    </p>
+                    <p>
+                    At Pro Services Marketing, we act as your dedicated growth partner. We don't just hand you a list; we provide the intelligence, the outreach, and the manpower to help you close more job orders in the competitive IT sector.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+                    <div class="flex items-center gap-3 p-4 bg-brand-surface rounded-xl border border-gray-800">
+                    <i class="fas fa-shield-alt text-brand-secondary text-xl"></i>
+                    <span class="text-white font-medium">Cyber Niche Experts</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-4 bg-brand-surface rounded-xl border border-gray-800">
+                    <i class="fas fa-robot text-brand-primary text-xl"></i>
+                    <span class="text-white font-medium">AI-Powered Sourcing</span>
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div class="mt-12">
+                    <a href="#" class="text-white border-b-2 border-brand-primary pb-1 hover:text-brand-primary transition-colors font-semibold">Learn more about our methodology</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-primary/10 to-brand-secondary/10"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Fill Your Pipeline?</h2>
+            <p class="text-xl text-gray-300 mb-10">Join the top IT & Cyber Security staffing firms using Pro Services Marketing to grow their business.</p>
+            <form class="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
+                <input type="email" placeholder="Enter your work email" class="px-6 py-4 rounded-lg bg-brand-surface border border-gray-600 text-white focus:outline-none focus:border-brand-primary w-full">
+                <button type="submit" class="px-8 py-4 rounded-lg bg-brand-primary hover:bg-blue-600 text-white font-bold whitespace-nowrap transition-all shadow-lg shadow-brand-primary/30">
+                    Get Free Leads
+                </button>
+            </form>
+            <p class="mt-4 text-sm text-gray-500">No credit card required. 7-day free trial.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-800 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                    <img src="Pro-Services-Logo.png" alt="Logo" class="h-10 w-10 rounded-lg">
+                    <span class="font-bold text-lg text-white">Pro Services</span>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                    The premier lead generation and marketing partner for IT & Cyber Security staffing agencies.
+                    </p>
+                    <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+
+                <!-- Solutions -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Solutions</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-brand-primary transition-colors">Lead Generation</a></li>
+                    <li><a href="#" class="hover:text-brand-primary transition-colors">Appointment Setting</a></li>
+                    <li><a href="#" class="hover:text-brand-primary transition-colors">Staff Augmentation</a></li>
+                    <li><a href="#" class="hover:text-brand-primary transition-colors">Data Enrichment</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Company</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-brand-primary transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-brand-primary transition-colors">Case Studies</a></li>
+                    <li><a href="#" class="hover:text-brand-primary transition-colors">Blog</a></li>
+                    <li><a href="#" class="hover:text-brand-primary transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                    <li class="flex items-start gap-3">
+                    <i class="fas fa-map-marker-alt mt-1 text-brand-primary"></i>
+                    <span>123 Tech Blvd, Suite 400<br>Austin, TX 78701</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                    <i class="fas fa-phone text-brand-primary"></i>
+                    <span>(555) 123-4567</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                    <i class="fas fa-envelope text-brand-primary"></i>
+                    <span>hello@proservices.marketing</span>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-600 text-sm">© 2026 Pro Services Marketing. All Rights Reserved.</p>
+                <div class="flex space-x-8 mt-4 md:mt-0 text-sm text-gray-600">
+                    <a href="#" class="hover:text-gray-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-400 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
