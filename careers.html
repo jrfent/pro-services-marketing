@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Pro Services Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0B1120', // Deepest Slate
+                            primary: '#0ea5e9', // Sky 500
+                            secondary: '#14b8a6', // Teal 500
+                            surface: '#1e293b', // Slate 800
+                            glow: '#38bdf8', // Light Blue Glow
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            background: rgba(30, 41, 59, 0.6);
+            border-color: rgba(14, 165, 233, 0.3);
+            transform: translateY(-2px);
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(11, 17, 32, 0.7), rgba(11, 17, 32, 1));
+        }
+        .job-row {
+            transition: all 0.2s ease;
+        }
+        .job-row:hover {
+            background-color: rgba(30, 41, 59, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-gray-100 font-sans antialiased selection:bg-brand-primary selection:text-white flex flex-col min-h-screen">
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <div class="relative py-24 md:py-32 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')] opacity-10"></div>
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-primary/10 to-transparent blur-3xl"></div>
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-block mb-4 px-3 py-1 rounded-lg bg-brand-secondary/10 border border-brand-secondary/20">
+                <span class="text-brand-secondary text-sm font-bold uppercase tracking-wider">We Are Hiring</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+                Build the Future of <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">Staffing Intelligence</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-xl text-gray-400 leading-relaxed">
+                We don't just sell leads. We engineer growth for the world's top Cyber Security recruiting firms. Join a team where precision beats volume every time.
+            </p>
+        </div>
+    </div>
+
+    <!-- Culture / Benefits Grid -->
+    <section class="py-16 bg-brand-surface/30 border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white">Why Pro Services Marketing?</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="glass-card p-8 rounded-2xl text-center">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-primary/10 flex items-center justify-center mb-6 text-brand-primary text-2xl">
+                        <i class="fas fa-laptop-house"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Remote-First Freedom</h3>
+                    <p class="text-gray-400">
+                        We care about output, not hours in a chair. Work from anywhere in the US. We provide the tech; you provide the talent.
+                    </p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="glass-card p-8 rounded-2xl text-center">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-secondary/10 flex items-center justify-center mb-6 text-brand-secondary text-2xl">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Uncapped Growth</h3>
+                    <p class="text-gray-400">
+                        Our commission structures are designed to reward high performers aggressively. No ceilings. No "territory restrictions."
+                    </p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="glass-card p-8 rounded-2xl text-center">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-purple-500/10 flex items-center justify-center mb-6 text-purple-400 text-2xl">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Intellectual Challenge</h3>
+                    <p class="text-gray-400">
+                        We solve complex data problems for the Cyber Security industry. You'll be working with smart people solving hard problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section class="py-24">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-10">Open Positions</h2>
+
+            <div class="space-y-4">
+                
+                <!-- Job 1 -->
+                <div class="job-row group flex flex-col md:flex-row items-center justify-between p-6 rounded-xl border border-gray-800 bg-brand-dark hover:border-brand-primary/50 cursor-pointer">
+                    <div class="mb-4 md:mb-0 text-center md:text-left">
+                        <h3 class="text-xl font-bold text-white group-hover:text-brand-primary transition-colors">Senior Account Executive</h3>
+                        <div class="flex items-center justify-center md:justify-start gap-4 mt-2 text-sm text-gray-400">
+                            <span><i class="fas fa-map-marker-alt mr-2"></i>Remote (US)</span>
+                            <span><i class="fas fa-clock mr-2"></i>Full-Time</span>
+                            <span><i class="fas fa-dollar-sign mr-2"></i>$120k - $200k OTE</span>
+                        </div>
+                    </div>
+                    <a href="mailto:careers@proservicesmarketing.com?subject=Application: Senior Account Executive" class="px-6 py-2 rounded-full bg-brand-surface border border-gray-600 text-white hover:bg-brand-primary hover:border-brand-primary transition-all font-semibold text-sm">
+                        Apply Now
+                    </a>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="job-row group flex flex-col md:flex-row items-center justify-between p-6 rounded-xl border border-gray-800 bg-brand-dark hover:border-brand-secondary/50 cursor-pointer">
+                    <div class="mb-4 md:mb-0 text-center md:text-left">
+                        <h3 class="text-xl font-bold text-white group-hover:text-brand-secondary transition-colors">Lead Research Analyst</h3>
+                        <div class="flex items-center justify-center md:justify-start gap-4 mt-2 text-sm text-gray-400">
+                            <span><i class="fas fa-map-marker-alt mr-2"></i>Remote</span>
+                            <span><i class="fas fa-clock mr-2"></i>Full-Time</span>
+                            <span><i class="fas fa-database mr-2"></i>Data Operations</span>
+                        </div>
+                    </div>
+                    <a href="mailto:careers@proservicesmarketing.com?subject=Application: Lead Research Analyst" class="px-6 py-2 rounded-full bg-brand-surface border border-gray-600 text-white hover:bg-brand-secondary hover:border-brand-secondary transition-all font-semibold text-sm">
+                        Apply Now
+                    </a>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="job-row group flex flex-col md:flex-row items-center justify-between p-6 rounded-xl border border-gray-800 bg-brand-dark hover:border-purple-500/50 cursor-pointer">
+                    <div class="mb-4 md:mb-0 text-center md:text-left">
+                        <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">Client Success Manager</h3>
+                        <div class="flex items-center justify-center md:justify-start gap-4 mt-2 text-sm text-gray-400">
+                            <span><i class="fas fa-map-marker-alt mr-2"></i>Remote</span>
+                            <span><i class="fas fa-clock mr-2"></i>Full-Time</span>
+                            <span><i class="fas fa-users mr-2"></i>Customer Success</span>
+                        </div>
+                    </div>
+                    <a href="mailto:careers@proservicesmarketing.com?subject=Application: Client Success Manager" class="px-6 py-2 rounded-full bg-brand-surface border border-gray-600 text-white hover:bg-purple-500 hover:border-purple-500 transition-all font-semibold text-sm">
+                        Apply Now
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- General Application -->
+            <div class="mt-16 p-8 rounded-2xl bg-gradient-to-r from-brand-surface to-brand-dark border border-gray-700 text-center">
+                <h3 class="text-2xl font-bold text-white mb-4">Don't see your role?</h3>
+                <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                    We are always looking for exceptional talent in sales, data science, and marketing. If you think you can help us grow, we want to hear from you.
+                </p>
+                <a href="mailto:careers@proservicesmarketing.com?subject=General Application" class="inline-flex items-center text-brand-primary font-bold hover:text-white transition-colors">
+                    Send us your resume <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script to Load Header and Footer -->
+    <script>
+        // Function to load HTML content
+        function loadHTML(elementId, fileName) {
+            fetch(fileName)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Error loading ' + fileName + ':', error);
+                });
+        }
+
+        // Load Header and Footer
+        document.addEventListener("DOMContentLoaded", function() {
+            loadHTML('header-placeholder', 'header.html');
+            loadHTML('footer-placeholder', 'footer.html');
+        });
+    </script>
+</body>
+</html>
