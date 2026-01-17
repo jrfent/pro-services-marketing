@@ -3,30 +3,43 @@
         <div class="flex justify-between items-center h-24">
             <!-- Logo -->
             <div class="flex-shrink-0 flex items-center gap-3">
-                <img src="Pro-Services-Logo.png" alt="Pro Services Marketing Logo" class="h-14 w-14 rounded-xl border border-gray-700/50 shadow-lg shadow-brand-primary/20">
-                <div class="flex flex-col">
-                    <span class="font-bold text-xl tracking-tight text-white leading-none">Pro Services</span>
-                    <span class="text-brand-primary text-sm font-semibold tracking-widest uppercase">Marketing</span>
-                </div>
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="Pro-Services-Logo.png" alt="Pro Services Marketing Logo" class="h-14 w-14 rounded-xl border border-gray-700/50 shadow-lg shadow-brand-primary/20">
+                    <div class="flex flex-col">
+                        <span class="font-bold text-xl tracking-tight text-white leading-none">Pro Services</span>
+                        <span class="text-brand-primary text-sm font-semibold tracking-widest uppercase">Marketing</span>
+                    </div>
+                </a>
             </div>
             
             <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-8 items-center">
-                <a href="/" class="text-gray-300 hover:text-brand-primary transition-colors text-sm font-medium">Home</a>
-                <a href="#solutions" class="text-gray-300 hover:text-brand-primary transition-colors text-sm font-medium">Solutions</a>
-                <a href="our-process.html" class="text-gray-300 hover:text-brand-primary transition-colors text-sm font-medium">Our Process</a>
-                <a href="#about" class="text-gray-300 hover:text-brand-primary transition-colors text-sm font-medium">About</a>
-                <a href="tel:+18885791112" class="px-6 py-3 rounded-lg bg-gradient-to-r from-brand-primary to-brand-secondary hover:from-blue-500 hover:to-teal-500 text-white text-sm font-bold transition-all shadow-lg shadow-brand-primary/25 transform hover:-translate-y-0.5">
-                    (888) 579-1112
+                <a href="index.html" class="text-gray-300 hover:text-brand-primary transition-colors text-sm font-medium">Home</a>
+                <a href="index.html#solutions" class="text-gray-300 hover:text-brand-primary transition-colors text-sm font-medium">Solutions</a>
+                <a href="index.html#about" class="text-gray-300 hover:text-brand-primary transition-colors text-sm font-medium">About</a>
+                <a href="tel:+18885791112" class="px-6 py-3 rounded-lg bg-gradient-to-r from-brand-primary to-brand-secondary hover:from-blue-500 hover:to-teal-500 text-white text-sm font-bold transition-all shadow-lg shadow-brand-primary/25 transform hover:-translate-y-0.5 flex items-center gap-2">
+                    <i class="fas fa-phone-alt"></i> (888) 579-1112
                 </a>
             </div>
 
             <!-- Mobile Menu Button -->
             <div class="md:hidden flex items-center">
-                <button class="text-gray-300 hover:text-white focus:outline-none">
+                <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none p-2">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-gray-800 absolute w-full">
+        <div class="px-4 pt-2 pb-6 space-y-2 shadow-2xl">
+            <a href="index.html" class="block px-3 py-4 rounded-md text-base font-medium text-white hover:bg-brand-surface hover:text-brand-primary border-b border-gray-800">Home</a>
+            <a href="index.html#solutions" class="block px-3 py-4 rounded-md text-base font-medium text-gray-300 hover:bg-brand-surface hover:text-brand-primary border-b border-gray-800">Solutions</a>
+            <a href="index.html#about" class="block px-3 py-4 rounded-md text-base font-medium text-gray-300 hover:bg-brand-surface hover:text-brand-primary border-b border-gray-800">About</a>
+            <a href="tel:+18885791112" class="block mt-4 px-3 py-4 rounded-lg bg-brand-primary text-white text-center font-bold">
+                <i class="fas fa-phone-alt mr-2"></i> Call (888) 579-1112
+            </a>
         </div>
     </div>
 </nav>

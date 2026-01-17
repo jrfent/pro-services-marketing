@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pro Services Marketing | IT & Cyber Security Staffing Growth</title>
     <meta name="description" content="Specialized lead generation for IT & Cyber Security staffing firms. We deliver verified job requisitions and hiring manager contacts nationwide.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
@@ -217,7 +218,7 @@
                     <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Tech Stack Filtering</li>
                     <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Direct Contact Info</li>
                     </ul>
-                    <a href="#" class="text-brand-primary font-bold text-sm hover:text-white flex items-center gap-2 transition-colors">Start Sourcing <i class="fas fa-chevron-right text-xs"></i></a>
+                    <a href="get-leads.html" class="text-brand-primary font-bold text-sm hover:text-white flex items-center gap-2 transition-colors">Start Sourcing <i class="fas fa-chevron-right text-xs"></i></a>
                 </div>
 
                 <!-- Solution 2 -->
@@ -233,7 +234,7 @@
                     <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Multi-Channel Outreach</li>
                     <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Calendar Booking</li>
                     </ul>
-                    <a href="#" class="text-brand-secondary font-bold text-sm hover:text-white flex items-center gap-2 transition-colors">Scale Outreach <i class="fas fa-chevron-right text-xs"></i></a>
+                    <a href="get-leads.html" class="text-brand-secondary font-bold text-sm hover:text-white flex items-center gap-2 transition-colors">Scale Outreach <i class="fas fa-chevron-right text-xs"></i></a>
                 </div>
 
                 <!-- Solution 3 -->
@@ -248,7 +249,7 @@
                     <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Data Entry Specialists</li>
                     <li class="flex items-center text-gray-300 text-sm"><i class="fas fa-check text-brand-secondary mr-3"></i> Cost-Effective Scaling</li>
                     </ul>
-                    <a href="#" class="text-purple-400 font-bold text-sm hover:text-white flex items-center gap-2 transition-colors">Build Your Team <i class="fas fa-chevron-right text-xs"></i></a>
+                    <a href="get-leads.html" class="text-purple-400 font-bold text-sm hover:text-white flex items-center gap-2 transition-colors">Build Your Team <i class="fas fa-chevron-right text-xs"></i></a>
                 </div>
             </div>
         </div>
@@ -373,10 +374,27 @@
                 })
                 .then(data => {
                     document.getElementById(elementId).innerHTML = data;
+                    
+                    // Re-attach event listeners after loading header
+                    if (fileName === 'header.html') {
+                        attachMenuListeners();
+                    }
                 })
                 .catch(error => {
                     console.error('Error loading ' + fileName + ':', error);
                 });
+        }
+
+        // Function to attach menu listeners
+        function attachMenuListeners() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            }
         }
 
         // Load Header and Footer
