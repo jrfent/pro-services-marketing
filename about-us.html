@@ -1,1 +1,215 @@
-This page is coming soon.
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Pro Services Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0B1120', // Deepest Slate
+                            primary: '#0ea5e9', // Sky 500
+                            secondary: '#14b8a6', // Teal 500
+                            surface: '#1e293b', // Slate 800
+                            glow: '#38bdf8', // Light Blue Glow
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(11, 17, 32, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(11, 17, 32, 0.4), rgba(11, 17, 32, 1));
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-gray-100 font-sans antialiased selection:bg-brand-primary selection:text-white flex flex-col min-h-screen">
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <div class="relative py-32 md:py-48 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="pro-services-hero-background.png" alt="Background" class="w-full h-full object-cover opacity-30">
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+                We Are The <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary text-glow">Growth Engine</span> <br> For Cyber Staffing.
+            </h1>
+            <p class="max-w-3xl mx-auto text-xl text-gray-300 leading-relaxed">
+                Born from the frustration of bad data. Built by recruiting veterans to solve the pipeline problem for IT & Cyber Security agencies.
+            </p>
+        </div>
+    </div>
+
+    <!-- Our Story / Mission -->
+    <section class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-brand-primary to-brand-secondary rounded-3xl opacity-20 blur-2xl"></div>
+                        <img src="pro-services-marketing-pic.png" alt="Our Team" class="relative rounded-3xl shadow-2xl border border-gray-700 w-full z-10">
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <div class="inline-block mb-4 px-3 py-1 rounded-lg bg-brand-primary/10 border border-brand-primary/20">
+                        <span class="text-brand-primary text-sm font-bold uppercase">Our Story</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Precision Over Volume</h2>
+                    <div class="space-y-6 text-gray-400 text-lg leading-relaxed">
+                        <p>
+                            Most lead generation agencies play a numbers game. They scrape generic job boards and hand you a list of 10,000 "leads" that are mostly dead ends, ghost jobs, or companies that strictly ban external recruiters.
+                        </p>
+                        <p>
+                            <strong class="text-white">We took a different path.</strong>
+                        </p>
+                        <p>
+                            Pro Services Marketing was founded on a simple premise: <span class="text-brand-secondary italic">Staffing agencies don't need more data; they need better intelligence.</span> We specialize exclusively in the IT and Cyber Security sectors because we understand the nuance. We know that a "Security Analyst" role at a bank is different from a "Pen Tester" role at a tech startup.
+                        </p>
+                        <p>
+                            Our mission is to empower your agency to stop chasing bad leads and start closing high-fee placements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Grid -->
+    <section class="py-24 bg-brand-surface border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">The Pro Services Standard</h2>
+                <p class="text-gray-400">Our methodology is centered around unlocking the unique potential of your agency.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="p-8 rounded-2xl bg-brand-dark border border-gray-800 hover:border-brand-primary/50 transition-colors group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-primary/10 flex items-center justify-center mb-6 group-hover:bg-brand-primary/20 transition-colors">
+                        <i class="fas fa-microscope text-2xl text-brand-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Deep Verification</h3>
+                    <p class="text-gray-400">
+                        We don't just verify emails. We verify intent. Our "Lead Genius" team confirms that the hiring company actually utilizes external staffing agencies before the lead ever hits your dashboard.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="p-8 rounded-2xl bg-brand-dark border border-gray-800 hover:border-brand-secondary/50 transition-colors group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-secondary/10 flex items-center justify-center mb-6 group-hover:bg-brand-secondary/20 transition-colors">
+                        <i class="fas fa-network-wired text-2xl text-brand-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Niche Expertise</h3>
+                    <p class="text-gray-400">
+                        We speak your language. From CISO to SOC Analysts, we understand the tech stack and the certifications (CISSP, CISM, CEH) that matter to your clients.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="p-8 rounded-2xl bg-brand-dark border border-gray-800 hover:border-purple-500/50 transition-colors group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 flex items-center justify-center mb-6 group-hover:bg-purple-500/20 transition-colors">
+                        <i class="fas fa-rocket text-2xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Speed to Market</h3>
+                    <p class="text-gray-400">
+                        In staffing, speed is everything. Our daily feed ensures you are pitching candidates to hiring managers while your competitors are still reading the job description.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-white mb-2">1,500+</div>
+                    <div class="text-sm text-brand-primary font-semibold uppercase tracking-wider">Meetings Booked</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-white mb-2">225k+</div>
+                    <div class="text-sm text-brand-primary font-semibold uppercase tracking-wider">Active Leads</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-white mb-2">98%</div>
+                    <div class="text-sm text-brand-primary font-semibold uppercase tracking-wider">Data Accuracy</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-white mb-2">24/7</div>
+                    <div class="text-sm text-brand-primary font-semibold uppercase tracking-wider">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-primary/10 to-brand-secondary/10"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Scale Your Agency?</h2>
+            <p class="text-xl text-gray-300 mb-10">Join the top IT & Cyber Security staffing firms using Pro Services Marketing to dominate their niche.</p>
+            <a href="tel:+18885791112" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-brand-primary hover:bg-blue-600 text-white font-bold text-lg transition-all shadow-lg shadow-brand-primary/30">
+                <i class="fas fa-phone-alt mr-3"></i> (888) 579-1112
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script to Load Header and Footer -->
+    <script>
+        // Function to load HTML content
+        function loadHTML(elementId, fileName) {
+            fetch(fileName)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Error loading ' + fileName + ':', error);
+                });
+        }
+
+        // Load Header and Footer
+        document.addEventListener("DOMContentLoaded", function() {
+            loadHTML('header-placeholder', 'header.html');
+            loadHTML('footer-placeholder', 'footer.html');
+        });
+    </script>
+</body>
+</html>
