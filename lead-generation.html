@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Setting | Pro Services Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                    colors: { brand: { dark: '#0B1120', primary: '#0ea5e9', secondary: '#14b8a6', surface: '#1e293b' } }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card { background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .hero-overlay { background: linear-gradient(to bottom, rgba(11, 17, 32, 0.8), rgba(11, 17, 32, 1)); }
+    </style>
+</head>
+<body class="bg-brand-dark text-gray-100 font-sans antialiased flex flex-col min-h-screen">
+
+    <div id="header-placeholder"></div>
+
+    <!-- Hero -->
+    <div class="relative py-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                We Book The Meeting. <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-secondary to-brand-primary">You Close The Deal.</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-xl text-gray-400">
+                Specialized SDRs who know the difference between Java and JavaScript. We fill your calendar with qualified job orders.
+            </p>
+        </div>
+    </div>
+
+    <!-- Process -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6">The "Tech-Fluent" Difference</h2>
+                    <p class="text-gray-400 mb-6 text-lg">
+                        Most appointment setters sound like robots reading a script. Our team is trained specifically on IT & Cyber Security terminology. We can hold a conversation with a CTO about their tech stack, building credibility before asking for the meeting.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-300"><i class="fas fa-check-circle text-brand-secondary mr-3"></i> Multi-Channel Outreach (Phone, Email, LinkedIn)</li>
+                        <li class="flex items-center text-gray-300"><i class="fas fa-check-circle text-brand-secondary mr-3"></i> Strict Qualification Criteria (Budget, Authority, Need)</li>
+                        <li class="flex items-center text-gray-300"><i class="fas fa-check-circle text-brand-secondary mr-3"></i> Full Calendar Management</li>
+                    </ul>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-l-4 border-brand-secondary">
+                    <h3 class="text-xl font-bold text-white mb-4">Sample Results (Month 1)</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between border-b border-gray-700 pb-2">
+                            <span class="text-gray-400">Dials Made</span>
+                            <span class="text-white font-bold">1,200</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-700 pb-2">
+                            <span class="text-gray-400">Decision Makers Reached</span>
+                            <span class="text-white font-bold">145</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-brand-primary font-bold">Qualified Meetings Booked</span>
+                            <span class="text-brand-primary font-bold text-xl">18</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        function loadHTML(id, file) { fetch(file).then(r => r.text()).then(d => document.getElementById(id).innerHTML = d); }
+        document.addEventListener("DOMContentLoaded", () => { loadHTML('header-placeholder', 'header.html'); loadHTML('footer-placeholder', 'footer.html'); });
+    </script>
+</body>
+</html>
